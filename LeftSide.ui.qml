@@ -34,17 +34,24 @@ Item {
                 id: contactInfoWrapper
                 ContactInfoItem {
                     x: 0
-                    y: 0
+                    y: 5
                     id: emailContact
+                    iconSrc: "assets/email.png"
                 }
                 ContactInfoItem {
-                    x:0
-                    y:76
+                    x: 0
+                    y: 76
+                    contactLabel: "PHONE"
+                    contactValue: "+216 55471251"
+                    iconSrc: "assets/21_537.png"
                     id: phoneContact
                 }
                 ContactInfoItem {
-                    x:0
-                    y:152
+                    x: 0
+                    y: 152
+                    contactLabel: "LOCATION"
+                    contactValue: "Tunis - Sidi Bouzid"
+                    iconSrc: "assets/location.png"
                     id: locationContact
                 }
             }

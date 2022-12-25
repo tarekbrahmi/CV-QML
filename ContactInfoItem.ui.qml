@@ -4,7 +4,9 @@ import MyCVTemplate 1.0
 Item {
     width: 237
     height: 48
-
+    property string contactLabel: "EMAIL"
+    property string contactValue: "brahmitarek6@gmail.com"
+    property string iconSrc: "assets/14_79.png"
     Rectangle {
         id: wrapper
         color: "transparent"
@@ -21,12 +23,12 @@ Item {
             color: "#202021"
 
             Image {
-                id: image
+                id: icon
                 anchors.centerIn: parent
                 width: 32
                 height: 32
                 fillMode: Image.PreserveAspectFit
-                source: "assets/14_79.png"
+                source: iconSrc
             }
         }
         Rectangle {
@@ -38,8 +40,8 @@ Item {
             height: 43.89
 
             Text {
-                id: contactLabel
-                text: qsTr("EMAIL")
+                id: icontactLabel
+                text: contactLabel
                 x: 0
                 y: 0
                 horizontalAlignment: Text.AlignHCenter
@@ -48,8 +50,8 @@ Item {
                 color: "#D6D6D6"
             }
             Text {
-                id: contactValue
-                text: qsTr("brahmitarek6@gmail.com")
+                id: icontactValue
+                text: contactValue
                 x: 0
                 y: 19.8
                 horizontalAlignment: Text.AlignHCenter
