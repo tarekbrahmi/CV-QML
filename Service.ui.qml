@@ -4,13 +4,16 @@ import MyCVTemplate 1.0
 Item {
     width: 426.75
     height: 138.89
+    property string iconSrc: "assets/14_79.png"
+    property string serviceLabel: "Photography"
+    property string serviceDesc: "I make high-quality photos of any category at a professional level."
     Image {
         id: i_service
         x: 30
         y: 30
         width: 40
         height: 40
-        source: "assets/14_79.png"
+        source: iconSrc
     }
     Rectangle {
         anchors.fill: parent
@@ -23,7 +26,7 @@ Item {
             Text {
                 color: "#FCFCFC"
                 id: service_name
-                text: qsTr("Photography")
+                text: serviceLabel
                 width: 120
                 height: 24
             }
@@ -35,7 +38,7 @@ Item {
                 width: 250.81
                 height: 50
                 wrapMode: Text.Wrap
-                text: qsTr("I make high-quality photos of any category at a professional level.")
+                text: serviceDesc
             }
         }
     }

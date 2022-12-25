@@ -74,7 +74,7 @@ Item {
                 id: service1
             }
             Service {
-                x: 315
+                x: 521
                 y: 25
                 id: service2
             }
