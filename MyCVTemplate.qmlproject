@@ -34,7 +34,7 @@ Project {
     }
 
     /* List of plugin directories passed to QML runtime */
-    importPaths: [ "imports","components","pages" ]
+    importPaths: [ "imports" ]
 
     /* Required for deployment */
     targetDirectory: "/opt/MyCVTemplate"

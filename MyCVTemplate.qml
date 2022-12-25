@@ -6,5 +6,6 @@ Item {
     height: Constants.height
 
     Screen01 {
+        anchors.fill: parent
     }
 }

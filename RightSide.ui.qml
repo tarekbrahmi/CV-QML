@@ -9,9 +9,11 @@ Item {
         anchors.fill: parent
         color: "#1E1E1F"
         border.width: 0
+        radius: 20
         Rectangle {
             x: 0
             y: 0
+            radius: 20
             width: 995
             height: 66
             color: "#1e1e1f"
@@ -20,6 +22,7 @@ Item {
                 height: 66
                 x: 10
                 y: 10
+                textValue: "About Me"
             }
             MenuBar {
                 x: 543
@@ -30,8 +33,8 @@ Item {
         }
         Text {
             y: 68
-            x: 0
-            width: 995
+            x: 10
+            width: 985
             height: 146
             id: about_me
             font.pixelSize: 20
@@ -42,15 +45,15 @@ Item {
         }
 
         Rectangle {
-            y: 214
+            y: 188
             x: 0
             width: 995
             height: 81
             color: "transparent"
             Text {
-                x: 30
-                y: 24
-                width: 995
+                x: 15
+                y: 0
+                width: 980
                 height: 32
                 id: whatimDo
                 font.pixelSize: 20
@@ -61,7 +64,7 @@ Item {
         }
         Rectangle {
             x: 0
-            y: 295
+            y: 240
             width: 995
             height: 411
             color: "transparent"

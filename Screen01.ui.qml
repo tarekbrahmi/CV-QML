@@ -2,7 +2,7 @@ import QtQuick 2.12
 import MyCVTemplate 1.0
 
 Rectangle {
-    width: Constants.width
+    width: 1262
     height: Constants.height
     color: Constants.backgroundColor
     LeftSide {
@@ -12,7 +12,7 @@ Rectangle {
         height: 708
     }
     RightSide {
-        x: 338
+        x: 294
         y: 0
         width: 995
         height: 708

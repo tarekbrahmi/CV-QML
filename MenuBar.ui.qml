@@ -17,25 +17,28 @@ Item {
         topLeftRadius: 0
 
         TextButton {
-            id: textButton
+            id: textButtonContact
             x: 379
             y: 22
+            textLabel: "Contact"
         }
 
         TextButton {
-            id: textButton1
+            id: textButtonPortfolio
             x: 277
             y: 22
+            textLabel: "Portfolio"
         }
 
         TextButton {
-            id: textButton2
+            id: textButtonResume
             x: 164
             y: 22
+            textLabel: "Resume"
         }
 
         TextButton {
-            id: textButton3
+            id: textButtonAbout
             x: 40
             y: 22
             active: true
