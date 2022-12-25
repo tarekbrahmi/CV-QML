@@ -15,11 +15,18 @@ Item {
         width: 61.43
         color: "transparent"
         height: 21
+        MouseArea {
+            id: mouseArea
+            enabled: true
+            anchors.fill: parent
+            hoverEnabled: true
+        }
+
         Text {
             text: qsTr(textLabel)
             id: button_item_text
             wrapMode: Text.WordWrap
-            color: Constants.grayColor
+            color: mouseArea.containsMouse ? "#FCFCFC" : Constants.grayColor
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
