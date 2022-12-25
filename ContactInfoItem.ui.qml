@@ -7,16 +7,27 @@ Item {
 
     Rectangle {
         id: wrapper
-        color: "#202021"
+        color: "transparent"
         Rectangle {
             id: wrapper_icon
-            //TODO add the icon
             x: 0
             y: 0
             width: 48
             height: 48
             radius: 12
+            transformOrigin: Item.TopLeft
+            border.color: "#3b3b3b"
+            border.width: 1
             color: "#202021"
+
+            Image {
+                id: image
+                anchors.centerIn: parent
+                width: 32
+                height: 32
+                fillMode: Image.PreserveAspectFit
+                source: "assets/14_79.png"
+            }
         }
         Rectangle {
             color: "transparent"
