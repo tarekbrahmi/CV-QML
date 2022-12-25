@@ -6,18 +6,26 @@ Item {
     width: 426
     height: 136.89
     Rectangle {
-        color: Constants.midgrayColor
+        color: "#202021"
         id: comment
         radius: 16
         anchors.fill: parent
-        Image {
-            id: comment_auth_image
+        Rectangle {
             x: 30
             y: -30
             width: 80
             height: 80
-            source: "assets/14_92.png"
+            radius: 20
+            color: "#202021"
+            Image {
+                width: 80
+                height: 80
+                id: comment_auth_image
+                anchors.fill: parent
+                source: "assets/14_92.png"
+            }
         }
+
         Text {
             x: 30
             y: 64

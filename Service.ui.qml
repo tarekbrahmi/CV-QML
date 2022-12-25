@@ -7,14 +7,7 @@ Item {
     property string iconSrc: "assets/14_79.png"
     property string serviceLabel: "Photography"
     property string serviceDesc: "I make high-quality photos of any category at a professional level."
-    Image {
-        id: i_service
-        x: 30
-        y: 30
-        width: 40
-        height: 40
-        source: iconSrc
-    }
+
     Rectangle {
         anchors.fill: parent
         color: Constants.midgrayColor
@@ -40,6 +33,15 @@ Item {
                 wrapMode: Text.Wrap
                 text: serviceDesc
             }
+        }
+        Image {
+            id: i_service
+            x: 30
+            y: 30
+            width: 40
+            height: 40
+            fillMode: Image.PreserveAspectFit
+            source: iconSrc
         }
     }
 }
