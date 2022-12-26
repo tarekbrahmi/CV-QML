@@ -83,7 +83,7 @@ Item {
                 y: 187
                 id: service3
             }
-            Service {
+            ArticleElement {
                 x: 521
                 y: 188
                 id: service4
