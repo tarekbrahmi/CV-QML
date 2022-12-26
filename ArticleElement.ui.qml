@@ -5,6 +5,10 @@ Item {
     y: 1
     width: 881
     height: 124.05
+    property string articleWhere: "FST"
+    property string articleDate: "2021-2023"
+    property string articleDesc: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+
     Rectangle {
         width: 857.5
         height: 124.05
@@ -19,35 +23,35 @@ Item {
         }
 
         Text {
-            id: articleWhere
+            id: iarticleWhere
             x: 41
             y: 0
             width: 223.57
             height: 23
-            text: qsTr("FST")
+            text: articleWhere
             color: "#FCFCFC"
             font.pixelSize: 16
             wrapMode: Text.Wrap
         }
         Text {
-            id: articleDate
+            id: iarticleDate
             x: 41
             y: 21.8
             width: 94.06
             height: 21
-            text: qsTr("2021-2023")
+            text: articleDate
             color: "#D6D6D6"
             font.pixelSize: 15
             wrapMode: Text.Wrap
         }
         Text {
-            id: articleDesc
+            id: iarticleDesc
             x: 41
             y: 50.55
             width: 811.59
             height: 45.75
             wrapMode: Text.Wrap
-            text: qsTr("Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.")
+            text: articleDesc
             color: "#D6D6D6"
 
             font.pixelSize: 15
