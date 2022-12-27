@@ -4,11 +4,8 @@ import MyCVTemplate 1.0
 Item {
     width: 995
     height: 642
-    Text {
-        id: name
+    Swiper {
         y: 68
         x: 10
-        text: qsTr("Projects Page")
-        color: "yellow"
     }
 }
