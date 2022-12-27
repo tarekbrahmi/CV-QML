@@ -17,21 +17,15 @@ Item {
 
         ArticleElement {
             y: 144
-            articleWhere: "FST"
-            articleDate: "2021-2023"
+            articleWhere: "Electronic Engineering and Embedded Systems"
+            articleDate: "2021-present"
             articleDesc: "Currently in engineering studies in embedded systems at the Faculty of Sciences of Tunis."
         }
         ArticleElement {
             y: 226
-            articleWhere: "FST"
-            articleDate: "2021-2023"
-            articleDesc: "Currently in engineering studies in embedded systems at the Faculty of Sciences of Tunis."
-        }
-        ArticleElement {
-            y: 312
-            articleWhere: "FST"
-            articleDate: "2021-2023"
-            articleDesc: "Currently in engineering studies in embedded systems at the Faculty of Sciences of Tunis."
+            articleWhere: "PREPARATORY CYCLE: MATHEMATICS - PHYSICAL"
+            articleDate: "2017-2020"
+            articleDesc: "PREPARATORY CYCLE: MATHEMATICS - PHYSICAL at Higher Institute of Applied Sciences and Technology of Mahdia."
         }
     }
 }
