@@ -6,7 +6,7 @@ Item {
     height: 138.89
     property string iconSrc: "assets/14_79.png"
     property string serviceLabel: "Photography"
-    property string serviceDesc: "I make high-quality photos of any category at a professional level."
+    property string serviceDesc: "I make ...."
 
     Rectangle {
         anchors.fill: parent
@@ -28,8 +28,8 @@ Item {
                 x: 0
                 y: 30
                 color: "#D6D6D6"
-                width: 250.81
-                height: 50
+                width: 339
+                height: 79
                 wrapMode: Text.Wrap
                 text: serviceDesc
             }
