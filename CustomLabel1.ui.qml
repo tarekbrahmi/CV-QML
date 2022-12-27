@@ -8,6 +8,7 @@ Item {
     property string textArticle: "Education"
     Rectangle {
         anchors.fill: parent
+        color: "transparent"
         Rectangle {
             id: wrapper_icon
             x: 0

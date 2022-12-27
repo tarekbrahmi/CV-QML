@@ -14,7 +14,7 @@ Item {
         color: "#FFFFFF"
         wrapMode: Text.Wrap
 
-        text: qsTr("Currently in engineering studies in embedded systems at the Faculty of Sciences of Tunis. I am looking for a company that could welcome me as part of an end of studies project(PFE). Thank you very much for the attention you will pay to this request. I am at your disposal for an interview.")
+        text: qsTr("Currently studying embedded systems engineering at the Faculty of Sciences de Tunis, I am looking for a company that could welcome me in the as part of a 4-6 month approved internship from the beginning of January or February 2023.")
     }
 
     Rectangle {

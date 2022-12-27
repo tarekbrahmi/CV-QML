@@ -26,7 +26,6 @@ Item {
             id: iarticleWhere
             x: 41
             y: 0
-            width: 223.57
             height: 23
             text: articleWhere
             color: "#FCFCFC"
@@ -37,7 +36,6 @@ Item {
             id: iarticleDate
             x: 41
             y: 21.8
-            width: 94.06
             height: 21
             text: articleDate
             color: "#D6D6D6"
