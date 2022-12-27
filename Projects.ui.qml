@@ -4,7 +4,7 @@ import MyCVTemplate 1.0
 Item {
     width: 995
     height: 642
-    Swiper {
+    ProjectItem {
         y: 68
         x: 10
     }
