@@ -29,7 +29,7 @@ Item {
                 height: 66
                 x: 10
                 y: 10
-                textValue: "About Me"
+                textValue: stacklayoutframe.stacklayoutindex === 3 ? "Project":stacklayoutframe.stacklayoutindex === 2 ?"Experience":stacklayoutframe.stacklayoutindex === 1 ?"Education":"About Me"
             }
 
             Item {
