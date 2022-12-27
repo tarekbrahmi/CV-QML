@@ -25,8 +25,12 @@ UI/UX design.
 Intégrer moyen de paiement(Stripe, Konnect..)
 Git, Github, Jira, Agile."
         }
+        VirticalDivider {
+            x: 24
+            y: 236
+        }
         ArticleElement {
-            y: 226
+            y: 296
             articleWhere: "Full Stack Developer Intern - CONFLEDIS SAS"
             articleDate: "08/2021 - 02/2022"
             articleDesc: "Achievements/Tasks
