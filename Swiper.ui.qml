@@ -4,36 +4,20 @@ import QtQuick.Controls 2.3
 
 SwipeView {
     id: view
-
-    currentIndex: 0
-
-    anchors.fill: screenshots
-    Item {
-        id: firstPage
-        Text {
-            id: name
-            text: qsTr("text")
-            anchors.centerIn: parent
-            color: "red"
-        }
+    Rectangle {
+        height: 300
+        color: "red"
+        //        anchors.centerIn: view
     }
-    Item {
-        id: secondPage
-        Text {
-            id: page2
-            anchors.centerIn: parent
-            color: "red"
-            text: qsTr("page2")
-        }
+    Rectangle {
+        height: 300
+        color: "green"
+        //        anchors.centerIn: view
     }
-    Item {
-        id: thirdPage
-        Text {
-            color: "red"
-            anchors.centerIn: parent
-            id: page3
-            text: qsTr("page3")
-        }
+    Rectangle {
+        height: 300
+        //        anchors.centerIn: view
+        color: "yellow"
     }
 }
 

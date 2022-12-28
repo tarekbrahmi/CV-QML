@@ -20,8 +20,9 @@ Item {
         Text {
             anchors.left: iconback.right
             id: backlabel
-            text: qsTr("Back to")
+            text: qsTr("Back to Projects")
             font.pixelSize: 15
+            font.bold: true
             color: "#D6D6D6"
             anchors.verticalCenter: parent.verticalCenter
         }

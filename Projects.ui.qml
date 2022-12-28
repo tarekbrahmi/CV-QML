@@ -18,43 +18,13 @@ Item {
         //        clip: true
         ProjectItem {
         }
-
-        SwipeView {
+        Swiper {
             clip: true
             id: view
-            anchors.topMargin: 680
-            anchors.bottomMargin: 56
-
             currentIndex: 0
+            anchors.topMargin: 680
+            anchors.bottomMargin: 248
             anchors.fill: parent
-
-            Item {
-                id: firstPage
-                Text {
-                    id: name
-                    text: qsTr("text")
-                    anchors.centerIn: parent
-                    color: "red"
-                }
-            }
-            Item {
-                id: secondPage
-                Text {
-                    id: page2
-                    anchors.centerIn: parent
-                    color: "red"
-                    text: qsTr("page2")
-                }
-            }
-            Item {
-                id: thirdPage
-                Text {
-                    color: "red"
-                    anchors.centerIn: parent
-                    id: page3
-                    text: qsTr("page3")
-                }
-            }
         }
 
         PageIndicator {

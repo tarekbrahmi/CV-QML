@@ -13,7 +13,7 @@ Item {
         x: 1
         y: 174.34
         id: myproject
-        projectSrc: "assets/project-1.jpg"
+        projectSrc: "assets/machine-learning.jpg"
         projectName: "Moonboard – Admin Dashboard & UI Kit + Charts Kit"
     }
     Rectangle {
