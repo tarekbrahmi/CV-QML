@@ -1,13 +1,15 @@
 import QtQuick 2.5
+import MyCVTemplate 1.0
 import QtQuick.Layouts 1.2
 import QtQuick.Window 2.2
+import QtQuick 2.12
 
 Item {
     id: swipeView
     property var model
-    property bool isDesktopPlatform: Qt.platform.os === "windows" ||
-                                     Qt.platform.os === "linux" ||
-                                     Qt.platform.os === "osx"
+    property bool isDesktopPlatform: Qt.platform.os === "windows"
+                                     || Qt.platform.os === "linux"
+                                     || Qt.platform.os === "osx"
 
     ColumnLayout {
         anchors.fill: parent

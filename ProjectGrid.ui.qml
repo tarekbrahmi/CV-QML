@@ -1,11 +1,17 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
-import QtGraphicalEffects 1.0
+import QtGraphicalEffects 1.12
 
 Item {
     id: element
     width: 425.75
     height: 393.44
+    property alias projectName: iprojectName.text
+    property alias projectDesc: iprojectDesc.text
+    property alias projectCategory: iprojectCategory.text
+    property alias projectDate: iprojectDate.text
+    property alias projectSRC: img.source
+
     Rectangle {
         id: projectgridwrapper
         anchors.fill: parent
@@ -20,8 +26,8 @@ Item {
             y: 224
             radius: 16
             Text {
-                id: projectName
-                text: qsTr("Design Conferences in 2019")
+                id: iprojectName
+                text: projectName
                 font.bold: true
                 height: 32
                 width: 333
@@ -33,12 +39,12 @@ Item {
                     id: mapname
                     enabled: true
                     hoverEnabled: true
-                    anchors.fill: projectName
+                    anchors.fill: iprojectName
                 }
             }
             Text {
-                id: projectDesc
-                text: qsTr("Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.")
+                id: iprojectDesc
+                text: projectDesc
 
                 height: 50
                 width: 345.89
@@ -49,14 +55,15 @@ Item {
                 wrapMode: Text.Wrap
             }
             Rectangle {
+                id: rectangle
                 color: "transparent"
                 x: 24
                 y: 19
                 width: 377.75
                 height: 25.75
                 Text {
-                    id: projectCategory
-                    text: qsTr("Design")
+                    id: iprojectCategory
+                    text: projectCategory
                     width: 51
                     height: 25
                     font.pixelSize: 15
@@ -65,20 +72,21 @@ Item {
                 }
                 Rectangle {
                     id: span
-                    x: 57.64
+                    x: 151
                     y: 11.38
                     width: 4
                     height: 4
                     radius: 2
+                    anchors.verticalCenter: rectangle.verticalCenter
                     color: "#D6D6D6"
                 }
                 Text {
-                    id: projectDate
-                    text: qsTr("Sep 16, 2021")
+                    id: iprojectDate
+                    text: projectDate
                     font.bold: true
                     height: 25
                     width: 84
-                    x: 68.64
+                    x: 169
                     y: 0
                     color: "#D6D6D6"
                     font.pixelSize: 15
@@ -103,7 +111,7 @@ Item {
                 id: img
                 width: 427
                 height: 224
-                source: "assets/machine-learning.jpg"
+                source: projectSRC
                 anchors.centerIn: upper
 
                 property bool rounded: true
