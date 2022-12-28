@@ -6,8 +6,8 @@ SwipeView {
     id: view
 
     currentIndex: 0
-    anchors.fill: parent
 
+    anchors.fill: screenshots
     Item {
         id: firstPage
         Text {

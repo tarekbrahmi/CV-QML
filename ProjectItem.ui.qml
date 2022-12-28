@@ -2,7 +2,7 @@ import QtQuick 2.12
 import MyCVTemplate 1.0
 
 Item {
-
+    id: projectitem
     ArrowBack {
         y: 125
         x: 31
@@ -17,6 +17,7 @@ Item {
         projectName: "Moonboard – Admin Dashboard & UI Kit + Charts Kit"
     }
     Rectangle {
+        id: labels
         y: 614.34
         x: 31
         color: "transparent"
@@ -39,6 +40,7 @@ Item {
             txtvalue: "2021-PRESENT"
         }
     }
+
 }
 
 
