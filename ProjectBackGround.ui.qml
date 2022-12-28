@@ -2,14 +2,13 @@ import QtQuick 2.12
 import MyCVTemplate 1.0
 
 Rectangle {
-    width: 985
+    width: 995
     height: 400
     property alias projectSrc: projectsrc.source
     property alias projectName: projectname.text
     Rectangle {
         color: "transparent"
         anchors.fill: parent
-
         Image {
             id: projectsrc
             anchors.centerIn: parent
