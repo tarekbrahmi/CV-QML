@@ -5,6 +5,7 @@ Item {
     width: 995
     height: 642
 
+
     Rectangle {
         id: expwrap
         x: 30
@@ -21,10 +22,10 @@ Item {
             articleWhere: "Front End Developer - Digital Trading LLC"
             articleDate: "08/2022 - 09/2022"
             articleDesc: "Achievements/Tasks
-ReactJS, Bootstrap, GraphQl, Redux.
-UI/UX design.
-Intégrer moyen de paiement(Stripe, Konnect..)
-Git, Github, Jira, Agile."
+                                ReactJS, Bootstrap, GraphQl, Redux.
+                                UI/UX design.
+                                Intégrer moyen de paiement(Stripe, Konnect..)
+                                Git, Github, Jira, Agile."
         }
         VirticalDivider {
             x: 24
@@ -35,9 +36,10 @@ Git, Github, Jira, Agile."
             articleWhere: "Full Stack Developer Intern - CONFLEDIS SAS"
             articleDate: "08/2021 - 02/2022"
             articleDesc: "Achievements/Tasks
-FrontEnd(Reactjs, Ionic5, Html, Bootstrap..)
-BackEnd(Django, Cookiecutter, Python, Docker)
-Déploiement(AWS, Digitalocean, Gunicorn, Ngnix..)"
+                                FrontEnd(Reactjs, Ionic5, Html, Bootstrap..)
+                                BackEnd(Django, Cookiecutter, Python, Docker)
+                                Déploiement(AWS, Digitalocean, Gunicorn, Ngnix..)"
         }
+
     }
 }

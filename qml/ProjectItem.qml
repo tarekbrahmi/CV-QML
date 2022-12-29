@@ -3,7 +3,8 @@ import MyCVTemplate 1.0
 
 Flickable {
     x:0
-    y:0
+    y:160
+    clip: true
     id: projectitem
     property alias projectItemSrc: myproject.projectSrc
     property alias projectItemName: myproject.projectName
@@ -15,28 +16,28 @@ Flickable {
     property alias labelCategory2txtvalue: labelCategory2.txtvalue
 
     anchors.bottomMargin: 0
-    contentWidth: 995
+    contentWidth: 642
     boundsBehavior: Flickable.StopAtBounds
     contentHeight: 1506
     ArrowBack {
         id:igoback
-        y: 125
+        y: 40
         x: 31
         width: 881.5
         height: 24.75
-//        onClicked: stackProjects.pop()
+        onClicked: stackProjects.pop()
 
     }
     ProjectBackGround {
         x: 1
-        y: 174.34
+        y: 76
         id: myproject
         projectSrc: projectItemSrc
         projectName: projectItemName
     }
     Rectangle {
         id:labels
-        y: 614.34
+        y: 400+86
         x: 31
         color: "transparent"
         CustomLabel2 {
@@ -64,8 +65,3 @@ Flickable {
 
 }
 
-
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
- ##^##*/

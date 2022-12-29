@@ -1,16 +1,17 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
-import QtGraphicalEffects 1.12
+import Qt5Compat.GraphicalEffects
 
-Item {
+MouseArea {
     id: element
     width: 425.75
     height: 393.44
-    property alias projectName: iprojectName.text
-    property alias projectDesc: iprojectDesc.text
-    property alias projectCategory: iprojectCategory.text
-    property alias projectDate: iprojectDate.text
-    property alias projectSRC: img.source
+    property alias projectName: iprojectName
+    property alias projectDesc: iprojectDesc
+    property alias projectCategory: iprojectCategory
+    property alias projectDate: iprojectDate
+    property alias projectSRC: img
+    property alias projectGridWrapper: projectgridwrapper
 
     Rectangle {
         id: projectgridwrapper
@@ -27,7 +28,7 @@ Item {
             radius: 16
             Text {
                 id: iprojectName
-                text: projectName
+                text: projectName.text
                 font.bold: true
                 height: 32
                 width: 333
@@ -44,7 +45,7 @@ Item {
             }
             Text {
                 id: iprojectDesc
-                text: projectDesc
+                text: projectDesc.text
 
                 height: 50
                 width: 345.89
@@ -63,7 +64,7 @@ Item {
                 height: 25.75
                 Text {
                     id: iprojectCategory
-                    text: projectCategory
+                    text: projectCategory.text
                     width: 51
                     height: 25
                     font.pixelSize: 15
@@ -82,7 +83,7 @@ Item {
                 }
                 Text {
                     id: iprojectDate
-                    text: projectDate
+                    text: projectDate.text
                     font.bold: true
                     height: 25
                     width: 84
@@ -111,7 +112,7 @@ Item {
                 id: img
                 width: 427
                 height: 224
-                source: projectSRC
+                source: projectSRC.source
                 anchors.centerIn: upper
 
                 property bool rounded: true

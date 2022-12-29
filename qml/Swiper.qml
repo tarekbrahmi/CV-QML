@@ -7,16 +7,16 @@ SwipeView {
     Rectangle {
         height: 300
         color: "red"
-        //        anchors.centerIn: view
+//        anchors.centerIn: view
     }
     Rectangle {
         height: 300
         color: "green"
-        //        anchors.centerIn: view
+//        anchors.centerIn: view
     }
     Rectangle {
         height: 300
-        //        anchors.centerIn: view
+//        anchors.centerIn: view
         color: "yellow"
     }
 }

@@ -7,6 +7,12 @@ Item {
     height: 40
     property alias textLabel: label.text
     property alias percent: percentValue.text
+    function calcPercentValue(){
+        var intpercent=Number(percent.split("%")[0])
+        var percentvalue=822/(100/Number(intpercent))
+        return  percentvalue
+    }
+
     Rectangle {
         color: "transparent"
         anchors.fill: parent
@@ -23,19 +29,16 @@ Item {
                 font.pixelSize: 15
                 color: "#FCFCFC"
                 Layout.fillWidth: true
-                horizontalAlignment: parent.horizontalCenter
                 wrapMode: Text.Wrap
             }
             Text {
                 wrapMode: Text.NoWrap
                 id: percentValue
                 Layout.fillWidth: true
-                text: percent
                 Layout.minimumWidth: 20
                 Layout.preferredWidth: 20
                 Layout.maximumWidth: 30
                 verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: parent.horizontalCenter
                 font.pixelSize: 15
                 color: "#D6D6D6"
             }
@@ -61,13 +64,13 @@ Item {
                 id: iindicator
                 x: 0
                 y: 32
-                width: 821
+                width: calcPercentValue()
                 height: 8
-                color: Constants.goldColor
-                radius: 5
                 anchors.left: parent.left
                 anchors.bottom: parent.bottom
                 anchors.top: parent.top
+                color: Constants.goldColor
+                radius: 5
             }
         }
     }

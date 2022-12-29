@@ -20,40 +20,29 @@ Item {
             id: textButtonContact
             x: 379
             y: 22
-            textLabel: "Projects"
-            hoverEnabled: true
-            autoExclusive: true
-            onClicked: stacklayoutframe.stacklayoutindex = 3
+            textLabel: "Contact"
+
         }
 
         TextButton {
             id: textButtonPortfolio
             x: 277
             y: 22
-            textLabel: "Experience"
-            hoverEnabled: true
-            autoExclusive: true
-            onClicked: stacklayoutframe.stacklayoutindex = 2
+            textLabel: "Portfolio"
         }
 
         TextButton {
             id: textButtonResume
             x: 164
             y: 22
-            textLabel: "Education"
-            hoverEnabled: true
-            autoExclusive: true
-            onClicked: stacklayoutframe.stacklayoutindex = 1
+            textLabel: "Resume"
         }
 
         TextButton {
             id: textButtonAbout
             x: 40
             y: 22
-            hoverEnabled: false
-            checked: true
-            autoExclusive: true
-            onClicked: stacklayoutframe.stacklayoutindex = 0
+            active: true
         }
     }
 }

@@ -27,14 +27,14 @@ Item {
             x: 41
             y: 0
             height: 23
-            MouseArea {
+            MouseArea{
                 anchors.fill: parent
-                id: maarticleWhere
+                id:maarticleWhere
                 hoverEnabled: true
             }
 
             text: articleWhere
-            color: maarticleWhere.containsMouse ? Constants.goldColor : "#FCFCFC"
+            color: maarticleWhere.containsMouse ? Constants.goldColor: "#FCFCFC"
             font.pixelSize: 16
             wrapMode: Text.Wrap
         }

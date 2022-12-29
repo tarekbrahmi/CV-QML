@@ -27,5 +27,6 @@ Item {
             articleDate: "2017-2020"
             articleDesc: "PREPARATORY CYCLE: MATHEMATICS - PHYSICAL at Higher Institute of Applied Sciences and Technology of Mahdia."
         }
+
     }
 }

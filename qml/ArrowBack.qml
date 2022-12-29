@@ -8,7 +8,7 @@ MouseArea {
     enabled: true
     hoverEnabled: true
     Rectangle {
-        color: "transparent"
+        color:"transparent"
         id: rectangle
         anchors.fill: parent
         Image {
@@ -28,6 +28,7 @@ MouseArea {
             color: "#D6D6D6"
             anchors.verticalCenter: parent.verticalCenter
         }
+
     }
     states: [
         State {

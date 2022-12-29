@@ -4,9 +4,7 @@ import QtQuick 2.10
 QtObject {
     readonly property int width: 1262
     readonly property int height: 708
-    readonly property FontLoader mySystemFont: FontLoader { name: "Arial" }
-    /* Edit this comment to add your custom font */
-    /* readonly property FontLoader myCustomFont: FontLoader { source: "MyCustomFont.ttf" } */
+    readonly property FontLoader mySystemFont: FontLoader { source: "Teko-Medium.ttf" }
     readonly property font font: Qt.font({
                                              family: mySystemFont.name,
                                              pixelSize: Qt.application.font.pixelSize
