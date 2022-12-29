@@ -3,7 +3,8 @@ import MyCVTemplate 1.0
 
 Flickable {
     x:0
-    y:0
+    y:12
+    clip: false
     id: projectitem
     property alias projectItemSrc: myproject.projectSrc
     property alias projectItemName: myproject.projectName

@@ -1,13 +1,15 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
 
-Item {
+MouseArea {
     id: element
     width: 123
     height: 25
+    enabled: true
+    hoverEnabled: true
     Rectangle {
-        id: rectangle
         color: "transparent"
+        id: rectangle
         anchors.fill: parent
         Image {
             x: 0
@@ -26,17 +28,11 @@ Item {
             color: "#D6D6D6"
             anchors.verticalCenter: parent.verticalCenter
         }
-        MouseArea {
-            id: maarrowback
-            enabled: true
-            hoverEnabled: true
-            anchors.fill: rectangle
-        }
     }
     states: [
         State {
             name: "active"
-            when: maarrowback.containsMouse
+            when: element.containsMouse
             PropertyChanges {
                 target: backlabel
                 color: Constants.goldColor

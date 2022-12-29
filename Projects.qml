@@ -22,6 +22,7 @@ Item {
             rowSpacing: 15
             columns: 2
             rows: 3
+
             ProjectGrid {
                 projectName: "ҽLAB : Remote access to HW testing Boards"
                 projectDesc: "Our project makes life easier with STM32 boards."
