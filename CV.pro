@@ -34,7 +34,6 @@ DISTFILES += \
     qml/Divider.ui.qml \
     qml/Education.qml \
     qml/Experience.qml \
-    qml/Info.qml \
     qml/Info.ui.qml \
     qml/LeftSide.qml \
     qml/LeftSide.ui.qml \
