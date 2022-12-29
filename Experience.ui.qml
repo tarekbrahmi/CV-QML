@@ -4,6 +4,7 @@ import MyCVTemplate 1.0
 Item {
     width: 995
     height: 642
+
     Rectangle {
         id: expwrap
         x: 30

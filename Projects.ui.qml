@@ -59,7 +59,7 @@ Item {
             }
             ProjectGrid {
                 projectName: "Self driving car"
-                projectDesc: "Remotly control a 4 route robot via Android app and camera based in OpenCV"
+                projectDesc: "Remotely control a 4 dc motors robot via an Android app and a camera based on OpenCV"
                 projectCategory: "Iot"
                 projectDate: "Present"
                 projectSRC: "assets/elab_pre.png"

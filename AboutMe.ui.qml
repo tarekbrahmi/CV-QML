@@ -49,18 +49,15 @@ Item {
             serviceLabel: "Build IoT Application"
             serviceDesc: "I can create an ioT application using many sensors like (DHT11,Gas,Mouvemennt,Vitesse) with many development boars like STM32,RaspberryPi,.."
         }
-        ProjectGrid {
+
+        Service {
             x: 521
-            y: 5
+            y: 25
+            id: service2
+            iconSrc: "assets/21_525.png"
+            serviceLabel: "Web development"
+            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
         }
-        //        Service {
-        //            x: 521
-        //            y: 25
-        //            id: service2
-        //            iconSrc: "assets/21_525.png"
-        //            serviceLabel: "Web development"
-        //            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
-        //        }
         Service {
             x: 50
             y: 187
@@ -70,14 +67,14 @@ Item {
             serviceLabel: "Web development"
             serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
         }
-        //        Service {
-        //            x: 521
-        //            y: 188
-        //            id: service4
+        Service {
+            x: 521
+            y: 188
+            id: service4
 
-        //            iconSrc: "assets/21_525.png"
-        //            serviceLabel: "Web development"
-        //            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
-        //        }
+            iconSrc: "assets/21_525.png"
+            serviceLabel: "Web development"
+            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
+        }
     }
 }
