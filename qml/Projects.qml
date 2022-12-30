@@ -6,9 +6,11 @@ import QtQuick.Layouts 1.0
 Item {
     width: 995
     height: 642
+    property int i: 0
     id: projectsgrid
     y: 78
     StackView{
+        z:1
         id:stackProjects
         anchors.horizontalCenter: projectsgrid.horizontalCenter
         anchors.verticalCenter: projectsgrid.verticalCenter
@@ -99,6 +101,8 @@ Item {
                 labelCategory2txtvalue: "2021-PRESENT"
 
             }
+
+
         }
         Component{
             id:project2

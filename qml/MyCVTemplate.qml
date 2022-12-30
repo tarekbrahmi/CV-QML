@@ -11,6 +11,7 @@ Item {
 
         anchors.fill: name
         Image {
+            z:1
             id: santaimage
             objectName:"santaimage"
             width: 80

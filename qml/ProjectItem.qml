@@ -1,10 +1,9 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
-
+import QtQuick.Controls 2.0
 Flickable {
-    x:0
-    y:0
-    clip: true
+    x: 0
+    y: 0
     id: projectitem
     property alias projectItemSrc: myproject.projectSrc
     property alias projectItemName: myproject.projectName
@@ -14,34 +13,92 @@ Flickable {
     property alias labelCategory2iconSrc: labelCategory2.iconSrc
     property alias labelCategory2txtlabel: labelCategory2.txtlabel
     property alias labelCategory2txtvalue: labelCategory2.txtvalue
-
-    anchors.bottomMargin: 0
-    contentWidth: 642
+    property int i: 0
+    //    anchors.bottomMargin: -110
+    contentWidth: 995
     boundsBehavior: Flickable.StopAtBounds
     contentHeight: 1506
+    //    clip: true
     ArrowBack {
-        id:igoback
+        id: igoback
         y: 40
         x: 31
         width: 881.5
         height: 24.75
-        onClicked: stackProjects.pop()
-
+                onClicked: stackProjects.pop()
     }
     ProjectBackGround {
         x: 1
         y: 76
+        width: 995
         id: myproject
         projectSrc: projectItemSrc
         projectName: projectItemName
     }
+    Timer {
+            interval: 2300; running: true; repeat: true
+            onTriggered: {
+                var allElemnts=view.count
+                view.currentIndex = i%allElemnts
+                i++
+            }
+        }
+    SwipeView {
+        id: view
+        enabled: true
+        currentIndex: 0
+        anchors.topMargin: 933
+        anchors.bottomMargin: 179
+        anchors.fill: parent
+        height: 400
+
+        Rectangle {
+            height: 300
+            color: "red"
+            //        anchors.centerIn: view
+        }
+        Rectangle {
+            height: 300
+            color: "green"
+            //        anchors.centerIn: view
+        }
+        Rectangle {
+            height: 300
+            //        anchors.centerIn: view
+            color: "yellow"
+        }
+    }
+
+    PageIndicator {
+        id: indicator
+        count: view.count
+        currentIndex: view.currentIndex
+        anchors.bottom: view.bottom
+        anchors.horizontalCenter: view.horizontalCenter
+    }
+
+    Text {
+        id: element
+        x: 15
+        y: 546
+        width: 980
+        height: 400
+        wrapMode: Text.WrapAnywhere
+        color: "red"
+        anchors.margins: 15
+        text: qsTr("TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText")
+
+        horizontalAlignment: Text.AlignLeft
+        font.pixelSize: 12
+    }
+
     Rectangle {
-        id:labels
-        y: 400+86
+        id: labels
+        y: 400 + 86
         x: 31
         color: "transparent"
         CustomLabel2 {
-            id:labelCategory1
+            id: labelCategory1
             x: 0
             y: 0
             width: 149.28
@@ -51,7 +108,7 @@ Flickable {
             txtvalue: labelCategory1txtvalue
         }
         CustomLabel2 {
-            id:labelCategory2
+            id: labelCategory2
             x: 229
             y: 0
             width: 149.28
@@ -61,7 +118,12 @@ Flickable {
             txtvalue: labelCategory2txtvalue
         }
     }
-
-
 }
 
+
+
+
+/*##^## Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+ ##^##*/

@@ -1,26 +1,74 @@
-import QtQuick 2.5
-import MyCVTemplate 1.0
-import QtQuick.Layouts 1.2
-import QtQuick.Controls 2.5
-StackView {
-    id: stackView
+import QtQuick 2.9
+import QtQuick.Controls 2.3
+import QtQuick.Layouts 1.3
 
-    initialItem: Component {
-        id: page
+ApplicationWindow {
+    id: window
+    width: 400
+    height: 300
+    visible: true
 
-        Page {
-            Row {
-                spacing: 20
+    SwipeView {
+        anchors.fill: parent
+
+        Rectangle {
+            Text {
+                text: "Page 1"
                 anchors.centerIn: parent
+            }
+        }
 
-                Button {
-                    text: "<"
-                    onClicked: stackView.replace(page, StackView.PopTransition)
+        Flickable {
+            id: listView
+            contentWidth: width
+            contentHeight: pane.implicitHeight
+
+            ScrollBar.vertical: ScrollBar {}
+
+            Pane {
+                id: pane
+
+                GridLayout {
+                    columnSpacing: 10
+                    columns: 2
+                    anchors.fill: parent
+
+                    Label { text: "Label" }
+                    Button { text: "Button" }
+
+                    Label { text: "Label" }
+                    RadioButton { text: "RadioButton" }
+
+                    Label { text: "Label" }
+                    ComboBox { model: 100 }
+
+                    Label { text: "Label" }
+                    Button { text: "Button" }
+
+                    Label { text: "Label" }
+                    RadioButton { text: "RadioButton" }
+
+                    Label { text: "Label" }
+                    ComboBox { model: 100 }
+
+                    Label { text: "Label" }
+                    Button { text: "Button" }
+
+                    Label { text: "Label" }
+                    RadioButton { text: "RadioButton" }
+
+                    Label { text: "Label" }
+                    ComboBox { model: 100 }
                 }
-                Button {
-                    text: ">"
-                    onClicked: stackView.replace(page, StackView.PushTransition)
-                }
+            }
+        }
+
+        Rectangle {
+            visible: SwipeView.isCurrentItem
+
+            Text {
+                text: "Page 3"
+                anchors.centerIn: parent
             }
         }
     }

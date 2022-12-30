@@ -8,8 +8,16 @@ Item {
     height: 640
     y: 0
     x: 0
+    property alias projectItemSrc: singlep.projectItemSrc
+    property alias projectItemName:singlep.projectItemName
+    property alias labelCategory1iconSrc:singlep.labelCategory1iconSrc
+    property alias labelCategory1txtlabel:singlep.labelCategory1txtlabel
+    property alias labelCategory1txtvalue:singlep.labelCategory1txtvalue
+    property alias labelCategory2iconSrc:singlep.labelCategory2iconSrc
+    property alias labelCategory2txtlabel:singlep.labelCategory2txtlabel
+    property alias labelCategory2txtvalue:singlep.labelCategory2txtvalue
     Flickable {
-        id: flickable
+        id: projectitem
         anchors.bottomMargin: -110
         anchors.fill: parent
         contentWidth: 995
@@ -17,6 +25,17 @@ Item {
         contentHeight: 1506
         //        clip: true
         ProjectItem {
+            id:singlep
+            projectItemSrc:projectItemSrc
+            projectItemName:projectItemName
+
+            labelCategory1iconSrc:labelCategory1iconSrc
+            labelCategory1txtlabel:labelCategory1txtlabel
+            labelCategory1txtvalue:labelCategory1txtvalue
+
+            labelCategory2iconSrc:labelCategory2iconSrc
+            labelCategory2txtlabel:labelCategory2txtlabel
+            labelCategory2txtvalue:labelCategory2txtvalue
         }
         Swiper {
             clip: true
