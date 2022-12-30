@@ -99,6 +99,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2021-PRESENT"
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
 
             }
 
@@ -117,7 +119,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2022-10-01"
-
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
             }
         }
         Component{
@@ -133,7 +136,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2021-PRESENT"
-
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
             }
         }
         Component{
@@ -149,7 +153,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2021-PRESENT"
-
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
             }
         }
         Component{
@@ -165,7 +170,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2021-PRESENT"
-
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
             }
         }
         Component{
@@ -181,7 +187,8 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2021-PRESENT"
-
+                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
+                projectDescc:"hello"
             }
         }
 

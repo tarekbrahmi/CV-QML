@@ -13,7 +13,9 @@ Flickable {
     property alias labelCategory2iconSrc: labelCategory2.iconSrc
     property alias labelCategory2txtlabel: labelCategory2.txtlabel
     property alias labelCategory2txtvalue: labelCategory2.txtvalue
-    property int i: 0
+    property alias projectImages:swipper.modelData
+    property alias projectDescc:iprojectDescc.text
+
     //    anchors.bottomMargin: -110
     contentWidth: 995
     boundsBehavior: Flickable.StopAtBounds
@@ -25,7 +27,7 @@ Flickable {
         x: 31
         width: 881.5
         height: 24.75
-                onClicked: stackProjects.pop()
+        onClicked: stackProjects.pop()
     }
     ProjectBackGround {
         x: 1
@@ -35,50 +37,13 @@ Flickable {
         projectSrc: projectItemSrc
         projectName: projectItemName
     }
-    Timer {
-            interval: 2300; running: true; repeat: true
-            onTriggered: {
-                var allElemnts=view.count
-                view.currentIndex = i%allElemnts
-                i++
-            }
-        }
-    SwipeView {
-        id: view
-        enabled: true
-        currentIndex: 0
-        anchors.topMargin: 933
-        anchors.bottomMargin: 179
-        anchors.fill: parent
-        height: 400
-
-        Rectangle {
-            height: 300
-            color: "red"
-            //        anchors.centerIn: view
-        }
-        Rectangle {
-            height: 300
-            color: "green"
-            //        anchors.centerIn: view
-        }
-        Rectangle {
-            height: 300
-            //        anchors.centerIn: view
-            color: "yellow"
-        }
-    }
-
-    PageIndicator {
-        id: indicator
-        count: view.count
-        currentIndex: view.currentIndex
-        anchors.bottom: view.bottom
-        anchors.horizontalCenter: view.horizontalCenter
+    Swiper{
+        id:swipper
+        modelData:projectImages
     }
 
     Text {
-        id: element
+        id: iprojectDescc
         x: 15
         y: 546
         width: 980
@@ -86,8 +51,7 @@ Flickable {
         wrapMode: Text.WrapAnywhere
         color: "red"
         anchors.margins: 15
-        text: qsTr("TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText")
-
+        text: projectDescc
         horizontalAlignment: Text.AlignLeft
         font.pixelSize: 12
     }
