@@ -17,17 +17,8 @@ Item {
             height: 80
             source: "assets/santa-claus.png"
             fillMode: Image.PreserveAspectFit
-
-            Behavior on x {
-                XAnimator {
-                    duration: 600
-                }
-            }
-            Behavior on y {
-                YAnimator {
-                    duration: 600
-                }
-            }
+            Behavior on x { PropertyAnimation { duration: 500 } }
+            Behavior on y { PropertyAnimation { duration: 500 } }
 
         }
 

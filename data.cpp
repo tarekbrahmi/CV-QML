@@ -11,7 +11,7 @@ bool Data::eventFilter(QObject *o, QEvent *event)
             QObject *santaimage = o->findChild<QObject*>("santaimage");
             if(santaimage){
                 santaimage->setProperty("x",mouseEvent->pos().x());
-                santaimage->setProperty("y",mouseEvent->pos().y());
+                santaimage->setProperty("y",mouseEvent->pos().y()+5);
             }
             return true;
         }
