@@ -1,6 +1,9 @@
 QT += quick
+QT += gui
+QT += core
 
 SOURCES += \
+        data.cpp \
         main.cpp
 
 resources.files = qml/MyCVTemplate.qml
@@ -203,4 +206,5 @@ DISTFILES += \
     qml/imports/QtQuick/Studio/Effects/qmldir \
     qtquickcontrols2.conf
 
-HEADERS +=
+HEADERS += \
+    data.h

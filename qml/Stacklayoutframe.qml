@@ -12,7 +12,6 @@ Item {
     property alias experience: layexperience
     property alias education: layeducation
     property alias project: layproject
-
     StackLayout {
         id: stacklayout
         x: 0

@@ -6,6 +6,15 @@ import QtQuick.Controls 2.12
 Item {
     width: 995
     height: 708
+//    MouseArea {
+//        z:-1
+//        anchors.fill: parent
+//        enabled: true
+//        onContainsMouseChanged: {
+//            console.log("from item .. ",mouseX,mouseY)
+//        }
+
+//    }
     Rectangle {
 
         id: wrapper
