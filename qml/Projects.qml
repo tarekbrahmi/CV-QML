@@ -145,7 +145,7 @@ Item {
         Component{
             id:project3
             ProjectItem{
-                projectItemSrc: "assets/s_login.png"
+                projectItemSrc: "assets/s_splash.png"
                 projectItemName: "TakeNote"
 
                 labelCategory1iconSrc: "assets/catego.png"

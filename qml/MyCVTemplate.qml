@@ -1,16 +1,14 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
-
-Rectangle {
-    id: name
+import QtQuick.Window 2.15
+Window {
     width: Constants.width
     height: Constants.height
     visible: true
+    id: name
     color: Constants.backgroundColor
-
     Screen01 {
-
-        anchors.fill: name
+        anchors.fill: parent
         Image {
             z:1
             id: santaimage

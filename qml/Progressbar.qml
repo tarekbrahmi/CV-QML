@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.3
 
 Item {
     width: 821
-    height: 40
+    height: 45
     property alias textLabel: label.text
     property alias percent: percentValue.text
     function calcPercentValue(){
