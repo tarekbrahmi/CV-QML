@@ -79,7 +79,7 @@ Item {
                         projectDesc.text: "Remotely control a 4 dc motors robot via an Android app and a camera based on OpenCV"
                         projectCategory.text: "Iot"
                         projectDate.text: "Present"
-                        projectSRC.source: "assets/elab_pre.png"
+                        projectSRC.source: "assets/robot.png"
                         onClicked: stackProjects.push(project6)
                     }
                 }
@@ -98,9 +98,9 @@ Item {
 
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
-                labelCategory2txtvalue: "2021-PRESENT"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
+                labelCategory2txtvalue: "2022-05-01"
+                projectImages: ["assets/elab_pre.png"]
+                projectDescc:"Our project makes life easier with STM32 boards. It allows us to control the remote STM32 cards . Remote access to the STM32 microcontroller will solve a lot of problems for those who do not have the purchasing power of this microcontroller especially students. Control and run embedded applications with the various STM32 cards at distance becomes possible with our “ҽ-LAB” platform. Our platform will ensure proper use of STM32 cards for students and teachers and creates an interactive online domain between them."
 
             }
 
@@ -119,49 +119,15 @@ Item {
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
                 labelCategory2txtvalue: "2022-10-01"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
-            }
-        }
-        Component{
-            id:project3
-            ProjectItem{
-                projectItemSrc: "assets/elab_pre.png"
-                projectItemName: "ҽLAB : Remote access to HW testing Boards"
-
-                labelCategory1iconSrc: "assets/catego.png"
-                labelCategory1txtlabel: "CATEGORY"
-                labelCategory1txtvalue: "IoT"
-
-                labelCategory2iconSrc: "assets/date.png"
-                labelCategory2txtlabel: "DATE"
-                labelCategory2txtvalue: "2021-PRESENT"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
-            }
-        }
-        Component{
-            id:project4
-            ProjectItem{
-                projectItemSrc: "assets/elab_pre.png"
-                projectItemName: "ҽLAB : Remote access to HW testing Boards"
-
-                labelCategory1iconSrc: "assets/catego.png"
-                labelCategory1txtlabel: "CATEGORY"
-                labelCategory1txtvalue: "IoT"
-
-                labelCategory2iconSrc: "assets/date.png"
-                labelCategory2txtlabel: "DATE"
-                labelCategory2txtvalue: "2021-PRESENT"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
+                projectImages: ["assets/machine-learning.jpg"]
+                projectDescc:" Computer vision is about helping machines interpret images and videos. It’s the science of interacting with an object through a digital medium and using sensors to analyze and understand what it sees. It’s a broad discipline that’s useful for machine translation, pattern recognition, robotic positioning, 3D reconstruction, driverless cars, and much more.The field of computer vision keeps evolving and becoming more impactful thanks to constant technological innovations. As time goes by, it will offer increasingly powerful tools for researchers, businesses, and eventually consumers."
             }
         }
         Component{
             id:project5
             ProjectItem{
-                projectItemSrc: "assets/elab_pre.png"
-                projectItemName: "ҽLAB : Remote access to HW testing Boards"
+                projectItemSrc: "assets/casa_smart.png"
+                projectItemName: "Smart home automation"
 
                 labelCategory1iconSrc: "assets/catego.png"
                 labelCategory1txtlabel: "CATEGORY"
@@ -169,16 +135,50 @@ Item {
 
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
-                labelCategory2txtvalue: "2021-PRESENT"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
+                labelCategory2txtvalue: "2022-05-01"
+                projectImages: ["assets/casa_smart.png"]
+                projectDescc:" Our project consists in first collecting data, the Temperature and Humidity values ​​via the DHT11 sensor.* The DHT11 sensor detects the Temperature and Humidity of the environment.* The STM32 board is programmed to obtain the data from these sensors. In parallel with this work, the values ​​of these sensors are displayed in a web platform ('SMART CASA').Next, we add a security system based on an algorithm of nfacial recognition using OpenCV and implement it in our web platform. 1. 'Web server' to view a temperature graph in real time. 2. 'OpenCV' provides security and facial recognition help."
+            }
+        }
+        Component{
+            id:project3
+            ProjectItem{
+                projectItemSrc: "assets/s_login.png"
+                projectItemName: "TakeNote"
+
+                labelCategory1iconSrc: "assets/catego.png"
+                labelCategory1txtlabel: "CATEGORY"
+                labelCategory1txtvalue: "Python"
+
+                labelCategory2iconSrc: "assets/date.png"
+                labelCategory2txtlabel: "DATE"
+                labelCategory2txtvalue: "2021-07-14"
+                projectImages: ["assets/s_login.png"]
+                projectDescc:"I create new project that makes your life easier especially your coding experience. Imagine you find a new piece of code or a new command that can come in handy anytime even if you don't have internet access .. you can create a note that can be saved to a local database at your system for later use "
+            }
+        }
+        Component{
+            id:project4
+            ProjectItem{
+                projectItemSrc: "assets/demoWS.png"
+                projectItemName: "Chat Application with Django Channels"
+
+                labelCategory1iconSrc: "assets/catego.png"
+                labelCategory1txtlabel: "CATEGORY"
+                labelCategory1txtvalue: "Web development"
+
+                labelCategory2iconSrc: "assets/date.png"
+                labelCategory2txtlabel: "DATE"
+                labelCategory2txtvalue: "2021-12-05"
+                projectImages: ["assets/demoWS.png"]
+                projectDescc:"Channels allow you to use WebSockets and other non-HTTP protocols on your Django site. For example, you can use WebSockets to allow a page on your site to immediately receive updates from your Django server without using the long HTTP poll or other expensive techniques."
             }
         }
         Component{
             id:project6
             ProjectItem{
-                projectItemSrc: "assets/elab_pre.png"
-                projectItemName: "ҽLAB : Remote access to HW testing Boards"
+                projectItemSrc: "assets/robot.png"
+                projectItemName: "Self driving car"
 
                 labelCategory1iconSrc: "assets/catego.png"
                 labelCategory1txtlabel: "CATEGORY"
@@ -186,9 +186,9 @@ Item {
 
                 labelCategory2iconSrc: "assets/date.png"
                 labelCategory2txtlabel: "DATE"
-                labelCategory2txtvalue: "2021-PRESENT"
-                projectImages: ["assets/elab_pre.png","assets/demoWS.png","assets/casa_smart.png"]
-                projectDescc:"hello"
+                labelCategory2txtvalue: "PRESENT"
+                projectImages: ["assets/robot.png"]
+                projectDescc:"Develops a prototype self-driving car. Remote control with mobile app, obstacle detection.Remotely control a 4 dc motors robot via an Android app and a camera based on OpenCV"
             }
         }
 

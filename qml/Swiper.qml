@@ -35,7 +35,7 @@ Item{
                         color: "transparent"
                         anchors.fill: parent
                         Image {
-                            id: projectsrc
+
                             anchors.centerIn: parent
                             anchors.fill: parent
                             clip: true
