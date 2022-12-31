@@ -47,5 +47,6 @@ Flickable {
     }
     Rectangle{
         id:commentsSection
+        
     }
 }

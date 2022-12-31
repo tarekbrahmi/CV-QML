@@ -55,7 +55,7 @@ Flickable {
             x: 50
             y: 25
             id: service1
-            iconSrc: "assets/21_537.png"
+            iconSrc: "assets/14_79.png"
             serviceLabel: "Build IoT Application"
             serviceDesc: "I can create an ioT application using many sensors like (DHT11,Gas,Mouvemennt,Vitesse) with many development boars like STM32,RaspberryPi,.."
         }
@@ -73,18 +73,18 @@ Flickable {
             y: 187
             id: service3
 
-            iconSrc: "assets/21_507.png"
-            serviceLabel: "Web development"
-            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
+            iconSrc: "assets/21_537.png"
+            serviceLabel: "Mobile app development"
+            serviceDesc: "I can design and code software for mobile devices like cell phones and tablets. Also a can create a determined by the needs of a specific clients."
         }
         Service {
             x: 521
             y: 188
             id: service4
 
-            iconSrc: "assets/14_79.png"
-            serviceLabel: "Web development"
-            serviceDesc: "I can design and create websites also i am responsible for both how the site looks and how it functions. I will evaluate a site to make sure it meets quality standards before it is released."
+            iconSrc: "assets/21_507.png"
+            serviceLabel: "Design"
+            serviceDesc: "The most modern and high-quality design made at a professional level."
         }
     }
 
@@ -115,31 +115,40 @@ Flickable {
         height:skillrep.count*(skillH+ 5+10)
         id:skillsok
         anchors.top: labelskills.bottom
+        color: "#D6D6D6"
 
-        color: "transparent"
-        Repeater{
-            id:skillrep
-            model: ListModel {
-                ListElement { mpercent: "90 %"; mtextLabel: "Django,Django-Channels,RestFramework" }
-                ListElement { mpercent: "85 %"; mtextLabel: "OpenCV,TensorFlow" }
-                ListElement { mpercent: "80 %"; mtextLabel: "Python3,C/C++,JavaScript" }
-                ListElement { mpercent: "75 %"; mtextLabel: "UART,SPI,I2C,CAN" }
-                ListElement { mpercent: "70 %"; mtextLabel: "RasperryPi,Ardino,STM32" }
-                ListElement { mpercent: "60 %"; mtextLabel: "Html,bootstrap,CSS/Sass" }
+        Rectangle{
+            anchors.fill:skillsok
+            radius: 16
+            color: Constants.backgroundColor
+            anchors.margins: 0.5
 
-            }
+            Repeater{
+                id:skillrep
+                model: ListModel {
+                    ListElement { mpercent: "90 %"; mtextLabel: "Django,Django-Channels,RestFramework" }
+                    ListElement { mpercent: "85 %"; mtextLabel: "OpenCV,TensorFlow" }
+                    ListElement { mpercent: "80 %"; mtextLabel: "Python3,C/C++,JavaScript" }
+                    ListElement { mpercent: "75 %"; mtextLabel: "UART,SPI,I2C,CAN" }
+                    ListElement { mpercent: "70 %"; mtextLabel: "RasperryPi,Ardino,STM32" }
+                    ListElement { mpercent: "60 %"; mtextLabel: "Html,bootstrap,CSS/Sass" }
 
-            delegate: Progressbar{
-                required property string mpercent
-                required property string mtextLabel
-                required property int index
-                x:skillH
-                y:skillH*(index+1)
-                anchors.topMargin: 20
-                percent: mpercent
-                textLabel: mtextLabel
+                }
+
+                delegate: Progressbar{
+                    required property string mpercent
+                    required property string mtextLabel
+                    required property int index
+                    x:skillH
+                    y:skillH*(index+1)
+                    anchors.topMargin: 20
+                    percent: mpercent
+                    textLabel: mtextLabel
+                }
             }
         }
+
+
 
     }
 }

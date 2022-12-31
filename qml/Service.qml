@@ -27,11 +27,17 @@ Item {
                 id: service_desc
                 x: 0
                 y: 30
-                color: "#D6D6D6"
+                color: maservicedesc.containsMouse ?Constants.goldColor:"#D6D6D6"
                 width: 339
                 height: 79
                 wrapMode: Text.Wrap
                 text: serviceDesc
+                MouseArea{
+                    id:maservicedesc
+                    anchors.fill: service_desc
+                    enabled: true
+                    hoverEnabled: true
+                }
             }
         }
         Image {

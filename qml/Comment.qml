@@ -5,6 +5,10 @@ Item {
     clip: false
     width: 426
     height: 136.89
+    property alias commentAuthImage: comment_auth_image.source //assets/14_92.png
+    property alias commentBody: comment_body.text
+    property alias commentAuth: comment_auth.text
+
     Rectangle {
         color: "#202021"
         id: comment
@@ -22,7 +26,7 @@ Item {
                 height: 80
                 id: comment_auth_image
                 anchors.fill: parent
-                source: "assets/14_92.png"
+                source: commentAuthImage
             }
         }
 
@@ -33,12 +37,12 @@ Item {
             height: 45.75
             color: "#D6D6D6"
             id: comment_body
-            text: qsTr("Ricardo was hired to create a corporate identity. We were very pleased with the work done...")
+            text: commentBody
             wrapMode: Text.Wrap
         }
         Text {
             id: comment_auth
-            text: qsTr("Daniel lwis")
+            text: commentAuth
             wrapMode: Text.Wrap
             x: 125
             y: 27

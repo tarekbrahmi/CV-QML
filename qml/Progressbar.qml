@@ -71,6 +71,7 @@ Item {
                 anchors.top: parent.top
                 color: Constants.goldColor
                 radius: 5
+                Behavior on width { PropertyAnimation { duration: 500 } }
             }
         }
     }
