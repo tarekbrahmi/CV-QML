@@ -14,7 +14,7 @@ Item {
         color: "#FFFFFF"
         wrapMode: Text.Wrap
 
-        text: qsTr("Currently studying embedded systems engineering at the Faculty of Sciences de Tunis, I am looking for a company that could welcome me in the as part of a 4-6 month approved internship from the beginning of January or February 2023.")
+        text: qsTr("Currently studying embedded systems engineering at the Faculty of Sciences de Tunis, I am looking for a company that could welcome me in the as part of a 4-6 months approved internship from the beginning of January or February 2023.")
     }
 
     Rectangle {
@@ -31,7 +31,7 @@ Item {
             id: whatimDo
             font.pixelSize: 20
             color: "#FFFFFF"
-            text: qsTr("What I'm Doing")
+            text: qsTr("What I'm Doing ?")
             wrapMode: Text.Wrap
         }
     }

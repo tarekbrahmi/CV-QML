@@ -25,9 +25,11 @@ Item {
                 id: scroller
                 clip: true
                 ScrollBar.vertical.policy: ScrollBar.AlwaysOff
+
                 GridLayout {
                     id: projectsGrid
                     x:60
+                    anchors.bottomMargin: 49
                     columnSpacing: 15
                     rowSpacing: 15
                     columns: 2

@@ -35,21 +35,30 @@ Item {
                 font.pixelSize: 26
             }
             Rectangle {
-                x: 52.14
-                y: 49.8
-                width: 132.2
+                id: rectangle
+                x: 5
+                y: 43
+                width: 224
                 height: 28
                 radius: 8
                 color: Constants.midgrayColor
                 Text {
-                    anchors.fill: parent
                     wrapMode: Text.Wrap
                     id: myoccupation
+                    x: 2
+                    width: 224
+                    height: 28
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
                     font.pixelSize: 12
-                    text: qsTr("Embadded System ing ")
+                    text: qsTr("Embedded Systems Engineering Student")
+                    anchors.verticalCenterOffset: 0
+                    anchors.horizontalCenterOffset: 2
+                    anchors.topMargin: 0
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.top: parent.top
                     color: "#FFFFFF"
                 }
             }

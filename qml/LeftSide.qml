@@ -1,9 +1,9 @@
 import QtQuick 2.12
 import MyCVTemplate 1.0
+
 Item {
     width: 256.5
     height: 595.7
-
     Rectangle {
         anchors.fill: parent
         radius: 20
@@ -56,5 +56,8 @@ Item {
                 }
             }
         }
+//        Social {
+//            y: 565
+//        }
     }
 }

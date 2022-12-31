@@ -45,7 +45,7 @@ Flickable {
     Text {
         id: iprojectDescc
         x: 15
-        y: 546
+        y: 556
         width: 980
         height: 200
         wrapMode: Text.WrapAnywhere
@@ -60,7 +60,7 @@ Flickable {
 
     Rectangle {
         id: labels
-        y: 400 + 86
+        y: 400 + 96
         x: 31
         color: "transparent"
         CustomLabel2 {

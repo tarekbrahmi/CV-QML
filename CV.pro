@@ -57,6 +57,8 @@ DISTFILES += \
     qml/Screen01.ui.qml \
     qml/Service.qml \
     qml/Service.ui.qml \
+    qml/Social.qml \
+    qml/SocialIcon.qml \
     qml/Stacklayoutframe.qml \
     qml/Swiper.qml \
     qml/Test.qml \
