@@ -27,7 +27,7 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 elide: Text.ElideRight
-                color: Constants.nameLabelColor
+                color: "#FFFFFF"
                 x: 29.06
                 y: -1
                 width: 179
