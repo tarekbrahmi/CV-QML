@@ -2,7 +2,7 @@ pragma Singleton
 import QtQuick 2.10
 
 QtObject {
-    readonly property int width: 1200
+    readonly property int width: 1250
     readonly property int height: 708
     readonly property FontLoader mySystemFont: FontLoader { source: "Teko-Medium.ttf" }
     readonly property font font: Qt.font({

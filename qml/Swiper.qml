@@ -3,8 +3,8 @@ import MyCVTemplate 1.0
 import QtQuick.Controls 2.3
 
 Item{
-    anchors.topMargin: 933
-    anchors.bottomMargin: 179
+    anchors.topMargin: 700
+    anchors.bottomMargin: 49
     height: 400
     anchors.fill: parent
     property int i: 0

@@ -47,13 +47,15 @@ Flickable {
         x: 15
         y: 546
         width: 980
-        height: 400
+        height: 200
         wrapMode: Text.WrapAnywhere
-        color: "red"
+        font.pixelSize: 15
+        font.bold: true
+        color: "#D6D6D6"
         anchors.margins: 15
         text: projectDescc
         horizontalAlignment: Text.AlignLeft
-        font.pixelSize: 12
+
     }
 
     Rectangle {

@@ -2,13 +2,12 @@ import QtQuick 2.12
 import MyCVTemplate 1.0
 
 Rectangle {
-    width: 1200
+    width: Constants.width
     height: Constants.height
     color: Constants.backgroundColor
     id:recWrapper
 
     LeftSide {
-
         x: 0
         y: 0
         width: 275
